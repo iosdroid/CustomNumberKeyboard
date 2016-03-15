@@ -1,20 +1,20 @@
 # CustomNumberKeyboard
 You Can use this Keyboard place any where on Viewcontroller
 How to use This
--(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    NumberKeyboard *numberKeyboard = [[NumberKeyboard alloc] init];
-    numberKeyboard.delegate=(id)self;
-    numberKeyboard.textField = textField;
-    numberKeyboard.maxlength = 4;
-    [numberKeyboard setMaxDecimalPoint:2];
-    numberKeyboard.textField.inputView = [UIView new];
-    if(IS_OS_9_OR_LATER)
-    {
-        numberKeyboard.textField.inputAssistantItem.leadingBarButtonGroups = @[];
-        numberKeyboard.textField.inputAssistantItem.trailingBarButtonGroups = @[];
-    }
-    numberKeyboard.alpha = 1;
-    numberKeyboard.showsPeriod = NO;
+     -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+         NumberKeyboard *numberKeyboard = [[NumberKeyboard alloc] init];
+            numberKeyboard.delegate=(id)self;
+            numberKeyboard.textField = textField;
+            numberKeyboard.maxlength = 4;
+            [numberKeyboard setMaxDecimalPoint:2];
+            numberKeyboard.textField.inputView = [UIView new];
+        if(IS_OS_9_OR_LATER)
+         {
+          numberKeyboard.textField.inputAssistantItem.leadingBarButtonGroups = @[];
+         numberKeyboard.textField.inputAssistantItem.trailingBarButtonGroups = @[];
+         }
+         numberKeyboard.alpha = 1;
+         numberKeyboard.showsPeriod = NO;
     
     
     if (!_keyboardAppear) {
