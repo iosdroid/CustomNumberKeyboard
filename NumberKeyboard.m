@@ -8,7 +8,7 @@
 
 #import "NumberKeyboard.h"
 #import "KAlertController.h"
-#import "NewOutletHelper.h"
+
 @implementation NumberKeyboard
 @synthesize textField = _textField;
 @synthesize maxlength, maxDecimalPoint;
