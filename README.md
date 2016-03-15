@@ -1,6 +1,9 @@
 # CustomNumberKeyboard
-You Can use this Keyboard place any where on Viewcontroller
-How to use This
+#You Can use this Keyboard place any where on Viewcontroller
+#How to use This
+   
+   
+    
     -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
     NumberKeyboard *numberKeyboard = [[NumberKeyboard alloc] init];
     numberKeyboard.delegate=(id)self;
@@ -15,8 +18,6 @@ How to use This
     }
     numberKeyboard.alpha = 1;
     numberKeyboard.showsPeriod = NO;
-    
-    
     if (!_keyboardAppear) {
         CATransition *transition = [CATransition animation];
         transition.duration = 0.5;
@@ -36,6 +37,8 @@ How to use This
         _keyboardAppear = YES;
         
     }
+    }
     
-}
+    
+    
 
